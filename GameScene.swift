@@ -329,7 +329,6 @@ class GameScene: SKScene {
             
             print("Pegou!")
             
-            self.playerDirection = 0
             self.player?.changeAnimation(to: .idle)
             self.player?.xScale = -1
         
@@ -347,6 +346,9 @@ class GameScene: SKScene {
             self.rightBtn?.removeFromParent()
             
             self.endingText?.isHidden = false
+            
+            self.fishingState = 0
+            self.hookBtnCount = 0
             
 //            self.backgroundSound?.run(.stop())
             

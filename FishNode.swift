@@ -41,7 +41,7 @@ class FishNode : SKNode {
             
             case .dead:
             
-                sprite.run(.repeatForever(.animate(with: .init(withFormat: "fish_dead%@", range: 1 ... 2), timePerFrame: 0.1)))
+                sprite.run(.repeatForever(.animate(with: .init(withFormat: "fish_dead%@", range: 1 ... 2), timePerFrame: 0.75)))
 
             break
 
